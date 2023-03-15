@@ -1,0 +1,21 @@
+.card {
+  border: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.card-header {
+  border: whitesmoke;
+  color: grey;
+}
+
+.btn {
+  background-color: #bdd333;
+  color: white;
+  border: whitesmoke;
+}
+
+input {
+  color: grey;
+}
+
+
