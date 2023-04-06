@@ -1,0 +1,13 @@
+.title-separator {
+  display: block;
+  margin: 0 auto;
+  width: 3.75rem;
+  border: 1px solid #f08b18;
+  background-color: #f08b18;
+}
+
+.btn-home {
+  border: 1px solid lightgrey;
+  font-size: small;
+  font-weight: 400;
+}

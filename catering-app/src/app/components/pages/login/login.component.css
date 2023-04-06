@@ -1,0 +1,24 @@
+/* .login {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+} */
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header-bg {
+  background-color: unset;
+  border-bottom: unset;
+}
+
+.btn-home {
+  border: 1px solid lightgray;
+}
+
+.card-login {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  border: whitesmoke;
+  margin-top: 10rem;
+}

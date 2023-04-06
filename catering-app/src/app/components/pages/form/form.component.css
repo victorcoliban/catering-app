@@ -8,14 +8,17 @@
   color: grey;
 }
 
-.btn {
+.btn-form {
   background-color: #bdd333;
-  color: white;
-  border: whitesmoke;
+  border: none;
 }
 
 input {
   color: grey;
 }
 
+.btn-home {
+  border: 1px solid lightgrey;
+  font-weight: 400;
+}
 

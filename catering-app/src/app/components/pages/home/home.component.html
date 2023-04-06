@@ -1,0 +1,104 @@
+<div class="page-content container">
+  <div class="section d-flex align-content-center">
+    <div class="container-xl">
+      <div class="row text-center">
+        <div class="col-lg-6 col-md-12 my-auto">
+          <div class="card-copy">
+            <div class="row">
+              <ul class="list-inline social-icons justify-content-center mx-2">
+                <li class="list-inline-item"><a href="#"><i class="fa-brands text-dark fa-xl fa-facebook"></i></a></li>
+                &nbsp;
+                <li class="list-inline-item"><a href="#"><i class="fa-brands text-dark fa-xl fa-twitter"></i></a></li>
+                &nbsp;
+                <li class="list-inline-item"><a href="#"><i class="fa-brands text-dark fa-xl fa-instagram"></i></a></li>
+              </ul>
+            </div>
+
+            <h1 class="page-title">Welcome to Garbanzo <br> Mediterranean and Middle Eastern Fusion Food</h1>
+            <span class="title-separator mt-3"></span>
+            <p>
+              <button class="btn btn-demo rounded-pill btn-info mt-3" routerLink="/catering-page">Catering Services&nbsp;
+                <i class="fa-solid fa-lg fa-arrow-right"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let food of foods" class="carousel-item" [ngClass]="{active: food === foods[0]}">
+                <ul class="list-unstyled pt-5">
+                  <li>
+                    <div class="container-food">
+                      <div class="image-container">
+                        <a routerLink="/food/{{food.id}}">
+                          <img [src]="food.imageUrl" [alt]="food.name" class="img-fluid rounded">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <div class="name text-center">
+                          {{ food.name }}
+                        </div>
+                        <div class="product-food-footer">
+                          <div class="ingredients">
+                            <span>
+                              {{ food.ingredients }}
+                            </span>
+                          </div>
+                        </div>
+                        <span class="title-separator mt-3"></span>
+                      </div>
+                      <div class="mt-5 d-flex justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                          <span *ngIf="!isAdmin" class="price">{{ food.price | currency:'EUR' }}</span>
+                          <div *ngIf="isAdmin" class="d-flex w-100 justify-content-between align-items-center">
+                            <span class="price m-3">{{ food.price | currency:'EUR' }}</span>
+                            <button class="delete-btn btn btn-danger btn-sm" (click)="deleteFood(food.id)">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span><i class="text-dark fa-solid fa-arrow-left fa-2xl icon-left"></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span><i class="text-dark fa-solid fa-arrow-right fa-2xl icon-right"></i></span>
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container container-home">
+  <div  *ngIf="isAdmin" class="container container-add-food pb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Adding Food</h5>
+            <form>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Food name">
+              </div>
+              <div class="form-group mb-3">
+                <input type="number" class="form-control" id="price" placeholder="Price">
+              </div>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" id="imageUrl" placeholder="Image URL">
+              </div>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" id="ingredients" placeholder="Ingredients (comma-separated)">
+              </div>
+              <button type="submit" class="btn btn-primary" (click)="addFood()">Add Food</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

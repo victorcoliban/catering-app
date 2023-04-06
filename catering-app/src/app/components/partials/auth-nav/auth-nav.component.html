@@ -1,0 +1,21 @@
+<!-- <button class="btn-primary button" routerLink="/signup">
+  Signup
+</button>
+
+<button class="btn-primary button" routerLink="/login">
+  Login
+</button>
+
+<button class="btn-primary button" routerLink="/dashboard">
+  Dashboard
+</button> -->
+<div class="user-auth mb-3">
+  <div *ngIf="(afAuth.user | async)">
+    Logged in
+
+    <br>
+  </div>
+  <div *ngIf="!(afAuth.user | async)">
+    Not logged in
+  </div>
+</div>

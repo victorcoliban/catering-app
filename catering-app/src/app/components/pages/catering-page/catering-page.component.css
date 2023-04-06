@@ -1,0 +1,22 @@
+.title-separator {
+  display: block;
+  margin: 0 auto;
+  width: 3.75rem;
+  border: 1px solid #f08b18;
+  background-color: #f08b18;
+}
+
+tbody, td, tfoot, th, thead, tr {
+  border-color: #f08b18;
+}
+
+.btn-demo {
+  font-weight: 600;
+  font-size: small;
+}
+
+.btn-home {
+  border: 1px solid lightgrey;
+  font-size: small;
+  font-weight: 400;
+}
