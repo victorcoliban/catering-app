@@ -16,29 +16,29 @@
       </button>
       <div class="collapse navbar-collapse navbar-collapse-bottom flex-grow-0 text-center align-content-end"
         id="navbarSupportedContent" [ngbCollapse]="isCollapsed" [class.pb-3]="!isCollapsed">
-        <li class="nav-item dropdown-li mx-3">
-          <a class="nav-link text-uppercase text-info" routerLink="catering-page">
+        <li class="nav-item dropdown-li mx-2">
+          <a class="nav-link" routerLink="catering-page" routerLinkActive="active">
             <strong>Catering Services</strong>
           </a>
         </li>
         <li class="nav-item dropdown-li location-li mx-3">
-          <a class="nav-link" routerLink="location" id="navbarDropdown">
+          <a class="nav-link" routerLink="location" id="navbarDropdown" routerLinkActive="active">
             <strong>Location</strong>
           </a>
         </li>
         <li class="nav-item dropdown-li mx-2">
-          <a class="nav-link" routerLink="/about">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">
             <strong>About Us</strong>
           </a>
         </li>
         <li class="nav-item dropdown-li mx-3 jobs-nav">
-          <a class="nav-link" routerLink="/jobs">
+          <a class="nav-link" routerLink="/jobs" routerLinkActive="active">
             <strong>Jobs</strong>
           </a>
         </li>
-        <ul class="navbar-nav d-none d-lg-block">
+        <ul class="navbar-nav d-none d-lg-block mx-2">
           <li class="nav-item">
-            <a class="nav-link order" href="https://www.mjam.net/en/restaurant/nxoz/garbanzo-falafel-and-hummus-bar">
+            <a class="nav-link order p-0" href="https://www.mjam.net/en/restaurant/nxoz/garbanzo-falafel-and-hummus-bar">
               <button class="btn btn-order rounded-pill" [ngClass]="{'pulse': isPulsing}" (click)="togglePulsing()">
                 <strong>Order online</strong>
               </button>

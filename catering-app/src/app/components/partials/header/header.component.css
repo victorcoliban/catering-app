@@ -23,6 +23,10 @@
   background-color: #bdd333;
 }
 
+.btn-order:hover {
+  border-bottom: unset;
+}
+
 /* header {
   border-bottom: 1px solid whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
@@ -74,14 +78,20 @@
   display: flex;
 }
 
-/* @media (max-width: 991px) {
-  .social-icons {
-    display: none;
-  }
+.nav-link {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 1px;
+}
 
-  .nav-item.jobs-nav .social-icons {
-    display: block;
-    margin-top: 1rem;
+.nav-link.active {
+  /* border-bottom-color: #f08b18; */
+  color: #f08b18;
+
+}
+
+
+/* @media (max-width: 991px) {
+  .nav-link {
+    border-bottom: unset;
   }
 } */
-

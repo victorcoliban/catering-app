@@ -1,38 +1,40 @@
-<div class="row">
-  <div class="mx-auto col-10 col-md-8 col-lg-6 pt-5">
-    <div class="card">
-      <div class="card-header text-dark text-center pb-0"><h3>Garbanzo Catering Order</h3></div>
-      <div class="card-body">
-        <form (ngSubmit)="onSubmit()">
-          <button class="btn btn-home mb-3" routerLink="/home">
-            <i class="fa-solid fa-sm fa-arrow-left"></i>
-            <strong>&nbsp; Home</strong>
-          </button>
-          <div class="form-group mb-3">
-            <input class="form-control form-control-lg" placeholder="Your Name" type="text" id="name" name="name" [(ngModel)]="name">
-          </div>
-          <div class="form-group mb-3">
-            <input class="form-control form-control-lg" placeholder="Your Email" type="email" id="email" name="email" [(ngModel)]="email">
-          </div>
-          <div class="form-group mb-3">
-            <input class="form-control form-control-lg" placeholder="Your Phone Number" type="text" id="phone" name="phone" [(ngModel)]="phone">
-          </div>
-          <div class="form-group mb-3">
-            <input class="form-control form-control-lg" placeholder="Guests Number" type="text" id="guests" name="guests" [(ngModel)]="guests">
-          </div>
-          <div class="form-group mb-3">
-            <input class="form-control form-control-lg" placeholder="Event Date" type="text" onfocus="(this.type='date')" id="event" name="event" [(ngModel)]="event" >
-          </div>
-          <div class="form-group mb-3">
-            <input class="form-control form-control-lg" placeholder="Event Time" type="text" id="time" onfocus="(this.type='time')" name="time" [(ngModel)]="time">
-          </div>
-          <div class="form-group mb-3">
-            <input class="form-control form-control-lg" placeholder="Company Name" type="text" id="company" name="company" [(ngModel)]="company">
-          </div>
-          <div class="d-flex justify-content-between align-items-center">
-          <button class="btn btn-form" type="submit"><strong>Submit</strong></button>
-          </div>
-        </form>
+<div class="container p-3">
+  <button class="btn btn-sm btn-home" routerLink="/home">
+    <i class="fa fa-home" aria-hidden="true"></i>
+    <strong>&nbsp; Home</strong>
+  </button>
+  <div class="row">
+    <div class="mx-auto col-10 col-md-8 col-lg-6 pt-5">
+      <div class="card">
+        <div class="card-header text-dark text-center pb-0"><h3>Garbanzo Catering Order</h3></div>
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group mb-3">
+              <input class="form-control form-control-lg" placeholder="Your Name" type="text" id="name" name="name" [(ngModel)]="name">
+            </div>
+            <div class="form-group mb-3">
+              <input class="form-control form-control-lg" placeholder="Your Email" type="email" id="email" name="email" [(ngModel)]="email">
+            </div>
+            <div class="form-group mb-3">
+              <input class="form-control form-control-lg" placeholder="Your Phone Number" type="text" id="phone" name="phone" [(ngModel)]="phone">
+            </div>
+            <div class="form-group mb-3">
+              <input class="form-control form-control-lg" placeholder="Guests Number" type="text" id="guests" name="guests" [(ngModel)]="guests">
+            </div>
+            <div class="form-group mb-3">
+              <input class="form-control form-control-lg" placeholder="Event Date" type="text" onfocus="(this.type='date')" id="event" name="event" [(ngModel)]="event" >
+            </div>
+            <div class="form-group mb-3">
+              <input class="form-control form-control-lg" placeholder="Event Time" type="text" id="time" onfocus="(this.type='time')" name="time" [(ngModel)]="time">
+            </div>
+            <div class="form-group mb-3">
+              <input class="form-control form-control-lg" placeholder="Company Name" type="text" id="company" name="company" [(ngModel)]="company">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+            <button class="btn btn-form" type="submit"><strong>Submit</strong></button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
