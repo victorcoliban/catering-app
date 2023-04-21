@@ -20,12 +20,13 @@
 }
 
 .btn-order {
+  /* background-color: #bdd333; */
   background-color: #bdd333;
 }
 
-.btn-order:hover {
+/* .btn-order:hover {
   border-bottom: unset;
-}
+} */
 
 /* header {
   border-bottom: 1px solid whitesmoke;
@@ -64,9 +65,9 @@
   }
 }
 
-.pulse {
+/* .pulse {
   animation: pulse 3s infinite;
-}
+} */
 
 .navbar-toggler:focus {
   outline: none;
@@ -85,8 +86,8 @@
 
 .nav-link.active {
   /* border-bottom-color: #f08b18; */
-  color: #f08b18;
-
+  /* color: #f08b18; */
+  opacity: 60%;
 }
 
 
@@ -95,3 +96,32 @@
     border-bottom: unset;
   }
 } */
+
+  /* .container-custom {
+    background-color: #f08b18;
+  } */
+
+.signup-bar-message {
+  font-size: 26px;
+  line-height: 1;
+  font-size: 2vw
+  /* font-family: 'SharpGroteskBold11'; */
+}
+
+.btn-signup {
+  border-color: transparent;
+  border-radius: 0;
+}
+
+.form-control {
+  border-radius: 0;
+  margin-left: 1rem;
+  border: none;
+  font-size: 13px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse .dropdown-li .nav-link {
+    margin-top: 0.5rem;
+  }
+}

@@ -17,7 +17,7 @@
             <h1 class="page-title">Welcome to Garbanzo <br> Mediterranean and Middle Eastern Fusion Food</h1>
             <span class="title-separator mt-3"></span>
             <p>
-              <button class="btn btn-demo rounded-pill btn-info mt-3" routerLink="/catering-page">Catering Services&nbsp;
+              <button class="btn btn-demo btn-info mt-3" routerLink="/catering-page">Catering Services&nbsp;
                 <i class="fa-solid fa-lg fa-arrow-right"></i>
               </button>
             </p>
@@ -32,7 +32,7 @@
                     <div class="container-food">
                       <div class="image-container">
                         <a routerLink="/food/{{food.id}}">
-                          <img [src]="food.imageUrl" [alt]="food.name" class="img-fluid rounded">
+                          <img [src]="food.imageUrl" [alt]="food.name" class="img-fluid rounded-top">
                         </a>
                       </div>
                       <div class="content">
@@ -69,6 +69,26 @@
               <span><i class="text-dark fa-solid fa-arrow-right fa-2xl icon-right"></i></span>
             </button>
           </div>
+      </div>
+      <div class="container container-program my-5 p-0 bg-light">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 my-auto">
+            <img src="assets/img7.jpg" alt="Opening Hours" class="img-fluid garbanzo-market">
+          </div>
+          <div class="col-lg-6 col-md-12 my-auto">
+            <div class="logo mx-auto">
+              <img src="assets/logo.png" alt="Logo">
+            </div>
+            <h3>Opening Hours</h3>
+            <p>
+              <strong>Tuesday - Friday:</strong>  9am - 5pm
+              <br>
+              <strong>Saturday:</strong>  10am - 4pm
+              <br>
+              <strong>Sunday - Monday:</strong>  Closed
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,11 +1,12 @@
-<header class="mb-5">
-  <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+<header class="fixed-top">
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
     <div class="container nav-container px-xs-5 px-xl-15px align-items-center">
       <a class="navbar-brand navbar-custom">
         <img class="logo" src="assets/logo.png" routerLink="home" height="36">
       </a>
       <a class="d-lg-none" href="https://www.mjam.net/en/restaurant/nxoz/garbanzo-falafel-and-hummus-bar">
-        <button class="btn btn-order rounded-pill" [ngClass]="{'pulse': isPulsing}" (click)="togglePulsing()">
+        <button class="btn btn-order">
+          <!-- [ngClass]="{'pulse': isPulsing}" (click)="togglePulsing()" -->
           <strong>Order online</strong>
         </button>
       </a>
@@ -39,7 +40,8 @@
         <ul class="navbar-nav d-none d-lg-block mx-2">
           <li class="nav-item">
             <a class="nav-link order p-0" href="https://www.mjam.net/en/restaurant/nxoz/garbanzo-falafel-and-hummus-bar">
-              <button class="btn btn-order rounded-pill" [ngClass]="{'pulse': isPulsing}" (click)="togglePulsing()">
+              <button class="btn btn-order">
+                <!-- [ngClass]="{'pulse': isPulsing}" (click)="togglePulsing()" -->
                 <strong>Order online</strong>
               </button>
             </a>
@@ -48,4 +50,30 @@
       </div>
     </div>
   </nav>
+  <div class="signup-bar-header container-fluid container-custom bg-warning text-light pt-2 pb-2">
+    <div class="signup-bar--header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-12 text-center">
+            <div class="signup-bar-message d-flex justify-content-center align-items-center">
+              <div class="text-uppercase text-dark d-none d-md-block">
+                Stay updated with upcoming news and events
+              </div>
+              <form>
+                <div class="form-group">
+                  <div class="input-group"> <input data-rule="restaurantName" type="text" class="form-control"
+                      placeholder="Your email address...">
+                    <button type="submit" class="btn btn-signup btn-dark">
+                      Sign up
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
+

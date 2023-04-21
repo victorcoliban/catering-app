@@ -29,18 +29,17 @@ ul {
 
 .price {
   font-weight: 600;
-
 }
 
 li a img {
   object-fit: cover;
-  height: 14.5rem;
+  height: 14rem;
 }
 
 .content {
   margin: 0.3rem;
   padding: 0.5rem 1rem;
-  position: relative;
+  /* position: relative; */
   height: 7rem;
 }
 
@@ -85,25 +84,6 @@ a {
   color: black;
 }
 
-a:hover {
-  color: #bdd333;
-}
-
-.add-food {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin-top: auto;
-}
-
-.add-food-btn {
-  background-color: #bdd333;
-  color: white;
-  margin-top: auto;
-
-}
-
 .delete-btn {
   margin-right: 1.5rem;
 }
@@ -112,20 +92,16 @@ a:hover {
   margin-top: 1rem;
 }
 
-.button {
-  margin-right: 1rem;
-}
-
 .image-container {
   position: relative;
 }
 
 .image-container img {
-  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.5s ease;
 }
 
 .image-container:hover img {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 .image-container:hover::after {
@@ -140,12 +116,17 @@ a:hover {
 }
 
 .page-content {
-  padding-top: 1.8rem;
+  padding-top: 5rem;
 }
 
 .btn-demo {
   font-size: small;
   font-weight: 600;
+  /* border: 1px solid grey; */
+}
+
+.btn-demo:hover {
+  opacity: 80%;
 }
 
 .page-title {
@@ -156,8 +137,8 @@ a:hover {
   display: block;
   margin: 0 auto;
   width: 3.75rem;
-  border: 1px solid #f08b18;
-  background-color: #f08b18;
+  border: 1px solid #f0ad4e;
+  background-color: #f0ad4e;
 }
 
 @media (max-width: 767.98px) {
@@ -180,4 +161,39 @@ a:hover {
     font-size: medium;
     margin-right: -1.3rem;
   }
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotateLogo 10s linear infinite;
+}
+
+@keyframes rotateLogo {
+  0%, 50% {
+    transform: rotateY(0deg);
+  }
+  50%, 100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* .garbanzo-market {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+} */
+
+.container-program {
+  /* border-radius: 1rem; */
+  border: 1px solid whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }

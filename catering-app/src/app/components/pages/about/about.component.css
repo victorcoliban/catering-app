@@ -3,3 +3,15 @@
   font-size: small;
   font-weight: 400;
 }
+
+.title-separator {
+  display: block;
+  margin: 0 auto;
+  width: 3.75rem;
+  border: 1px solid #f0ad4e;
+  background-color: #f0ad4e;
+}
+
+.container-about {
+  margin-top: 7rem;
+}

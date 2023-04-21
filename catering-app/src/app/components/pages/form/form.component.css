@@ -9,7 +9,7 @@
 }
 
 .btn-form {
-  background-color: #bdd333;
+  /* background-color: #bdd333; */
   border: none;
 }
 
@@ -19,6 +19,8 @@ input {
 
 .btn-home {
   border: 1px solid lightgrey;
-  font-weight: 400;
 }
 
+.container-form {
+  margin-top: 7rem;
+}
