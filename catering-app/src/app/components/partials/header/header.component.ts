@@ -16,4 +16,8 @@ export class HeaderComponent {
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
   }
+
+  closeNavbar() {
+    this.isCollapsed = true;
+  }
 }

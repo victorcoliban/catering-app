@@ -163,6 +163,12 @@ a {
   }
 }
 
+@media (max-width: 991.98px) {
+  .brands {
+    padding-top: 5rem;
+  }
+}
+
 .logo {
   width: 100px;
   height: 100px;
@@ -197,3 +203,4 @@ a {
   border: 1px solid whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
+

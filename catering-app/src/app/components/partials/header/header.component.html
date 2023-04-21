@@ -16,7 +16,7 @@
         <span class="fa fa-lg menu-icon" [ngClass]="{'fa-bars': isCollapsed, 'fa-times': !isCollapsed, 'open': !isCollapsed}"></span>
       </button>
       <div class="collapse navbar-collapse navbar-collapse-bottom flex-grow-0 text-center align-content-end"
-        id="navbarSupportedContent" [ngbCollapse]="isCollapsed" [class.pb-3]="!isCollapsed">
+        id="navbarSupportedContent" [ngbCollapse]="isCollapsed" [class.pb-3]="!isCollapsed" (click)="closeNavbar()">
         <li class="nav-item dropdown-li mx-2">
           <a class="nav-link" routerLink="catering-page" routerLinkActive="active">
             <strong>Catering Services</strong>
