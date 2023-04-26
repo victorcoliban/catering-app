@@ -1,4 +1,13 @@
-<div class="page-content container">
+<div class="page-content">
+  <div class="section section-video mt-4" id="next-section">
+    <div class="scroll-down bounce row d-none d-sm-flex" (click)="scrollToNextSection()">
+      <i class="fa fa-2xl icon-down text-warning fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <video id="myVideo" class="img-fluid" width="100%">
+      <source src="assets/video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
   <div class="section d-flex align-content-center">
     <div class="container-xl">
       <div class="row text-center">
@@ -17,7 +26,7 @@
             <h1 class="page-title">Welcome to Garbanzo <br> Mediterranean and Middle Eastern Fusion Food</h1>
             <span class="title-separator mt-3"></span>
             <p>
-              <button class="btn btn-demo btn-info mt-3" routerLink="/catering-page">Catering Services&nbsp;
+              <button class="btn btn-demo mt-3" routerLink="/catering-page">Catering Services&nbsp;
                 <i class="fa-solid fa-lg fa-arrow-right"></i>
               </button>
             </p>
@@ -70,10 +79,10 @@
             </button>
           </div>
       </div>
-      <div class="container container-program my-5 p-0 bg-light">
+      <div class="container container-program my-5 p-0">
         <div class="row">
           <div class="col-lg-6 col-md-12 my-auto">
-            <img src="assets/img7.jpg" alt="Opening Hours" class="img-fluid garbanzo-market">
+            <img src="assets/img7.jpg" alt="Opening Hours" class="img-fluid garbanzo-market rounded-pill-lg">
           </div>
           <div class="col-lg-6 col-md-12 my-auto">
             <div class="logo mx-auto">

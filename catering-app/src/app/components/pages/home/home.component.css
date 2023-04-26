@@ -39,7 +39,6 @@ li a img {
 .content {
   margin: 0.3rem;
   padding: 0.5rem 1rem;
-  /* position: relative; */
   height: 7rem;
 }
 
@@ -120,9 +119,10 @@ a {
 }
 
 .btn-demo {
-  font-size: small;
+  border: 1px solid grey;
   font-weight: 600;
-  /* border: 1px solid grey; */
+  font-size: small;
+  background-color: #bdd333;
 }
 
 .btn-demo:hover {
@@ -151,21 +151,35 @@ a {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 767.98px) {
   .icon-left {
     font-size: medium;
-    margin-left: -1.3rem;
   }
 
   .icon-right {
     font-size: medium;
-    margin-right: -1.3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-food {
+    width: 18rem;
+  }
+
+  .ingredients {
+    line-height:normal;
+  }
+}
+
+@media (max-width: 321px) {
+  .container-food {
+    width: 17rem;
   }
 }
 
 @media (max-width: 991.98px) {
   .brands {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
   }
 }
 
@@ -193,14 +207,46 @@ a {
   }
 }
 
-/* .garbanzo-market {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-} */
-
-.container-program {
-  /* border-radius: 1rem; */
-  border: 1px solid whitesmoke;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+.scroll-down {
+  color: #FAF2EB;
+  position: absolute;
+  bottom: 5rem !important;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  cursor: pointer;
 }
 
+@media screen and (max-width: 1440px) {
+  .scroll-down {
+    bottom: 25rem !important;
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icon-down {
+  font-size: 5rem;
+}
+
+.text-weight {
+  font-weight: bold;
+}

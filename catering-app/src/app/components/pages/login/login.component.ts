@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { AuthService } from '../../../services/auth.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-login',

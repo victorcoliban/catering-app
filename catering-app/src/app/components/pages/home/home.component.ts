@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { Food } from 'src/app/shared/models/Food';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
@@ -8,11 +8,12 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  private seeMoreIcon: HTMLElement | null = null;
   foods: Food[] = [];
   isAdmin: boolean = false;
 
-  constructor(private db: AngularFireDatabase, public afAuth: AngularFireAuth) {
+  constructor(private db: AngularFireDatabase, public afAuth: AngularFireAuth, private elRef: ElementRef) {
     const foodsRef = this.db.list('foods');
     foodsRef.snapshotChanges().subscribe((foods: any[]) => {
       this.foods = foods.map((food) => {
@@ -35,9 +36,6 @@ export class HomeComponent {
     const price = parseFloat(
       (document.getElementById('price') as HTMLInputElement).value!
     );
-    // const tags = (
-    //   document.getElementById('tags') as HTMLInputElement
-    // ).value!.split(',');
     const imageUrl = (document.getElementById('imageUrl') as HTMLInputElement)
       .value!;
     const ingredients = (
@@ -56,5 +54,31 @@ export class HomeComponent {
 
   logout(): void {
     this.afAuth.signOut();
+  }
+
+  scrollToNextSection() {
+    const nextSection = this.elRef.nativeElement.querySelector('.section-video')?.nextElementSibling;
+
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+
+      setInterval(() => {
+        if (this.seeMoreIcon) {
+          this.seeMoreIcon.classList.toggle('bounce');
+        }
+      }, 2000);
+    }
+  }
+
+  autoplayVideo() {
+    const myVideo = this.elRef.nativeElement.querySelector('#myVideo');
+    myVideo.controls = false;
+    myVideo.autoplay = true;
+    myVideo.muted = true;
+    myVideo.play();
+  }
+
+  ngOnInit() {
+    this.autoplayVideo();
   }
 }

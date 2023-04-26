@@ -13,7 +13,8 @@ tbody, td, tfoot, th, thead, tr {
 .btn-demo {
   font-weight: 600;
   font-size: small;
-  /* border: 1px solid grey; */
+  border: 1px solid grey;
+  background-color: #bdd333;
 }
 
 .btn-home {
@@ -24,4 +25,12 @@ tbody, td, tfoot, th, thead, tr {
 
 .container-catering {
   margin-top: 7rem;
+}
+
+.title-separator {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid #f0ad4e;
+  background-color: #f0ad4e;
 }

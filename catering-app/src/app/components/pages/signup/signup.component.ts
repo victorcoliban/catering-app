@@ -25,11 +25,11 @@ export class SignupComponent {
   }
 
   signup() {
-    if (this.signupForm.invalid)                            // if there's an error in the form, don't submit it
+    if (this.signupForm.invalid)
         return;
 
     this.authService.signupUser(this.signupForm.value).then((result) => {
-        if (result == null)                                 // null is success, false means there was an error
+        if (result == null)                                
             this.router.navigate(['/dashboard']);
         else if (result.isValid == false)
             this.firebaseErrorMessage = result.message;

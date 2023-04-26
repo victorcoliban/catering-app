@@ -4,7 +4,7 @@
     <strong>&nbsp; Home</strong>
   </button>
   <div class="row row-catering">
-    <div class="col-md-12 bg-light pt-4">
+    <div class="col-md-12 pt-4">
       <h2 class="text-center">Garbanzo Catering Services</h2>
       <table class="table">
         <thead>
@@ -16,10 +16,10 @@
         <tbody>
           <tr>
             <th scope="row">Pickup</th>
-            <td>
+            <td >
               Let us know when you want to pick up your order and we’ll have it ready to pack up when you arrive. If you’re traveling a long distance, or aren’t serving immediately, we offer thermal packaging to keep everything fresh and hot a while longer.
               <br>
-              <button class="btn btn-demo btn-info mt-3" routerLink="/form">Enquire here&nbsp;
+              <button class="btn btn-demo btn-sm mt-3" routerLink="/form">Enquire here&nbsp;
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
               <br><br>
@@ -29,9 +29,10 @@
           <tr>
             <th scope="row">Drop-Off Delivery</th>
             <td>
-              Let Garbanzo bring the food to you with our drop-off delivery. Our €50 delivery service includes thermal packaging, buffet setup, and delivery within a 10-km radius. Additional mileage is €0.50 per km each way.
-              <br><br>
-              Catering delivery is subject to the availability of drivers. We may not be able to accommodate all delivery requests or last-minute schedule changes.
+              <button type="button btn-modal" class="btn btn-secondary text-light btn-sm fw-bold mt-2" data-bs-toggle="modal" data-bs-target="#deliveryModal">
+                Learn more about our Drop-Off Delivery&nbsp;
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </td>
           </tr>
           <tr>
@@ -52,6 +53,24 @@
           </tr>
         </tbody>
       </table>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="deliveryModal" tabindex="-1" aria-labelledby="deliveryModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deliveryModalLabel">Drop-Off Delivery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Let Garbanzo bring the food to you with our drop-off delivery. Our €50 delivery service includes thermal packaging, buffet setup, and delivery within a 10-km radius. Additional mileage is €0.50 per km each way.</p>
+        <span class="title-separator mb-3"></span>
+        <p>Catering delivery is subject to the availability of drivers. We may not be able to accommodate all delivery requests or last-minute schedule changes.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>

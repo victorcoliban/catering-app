@@ -1,12 +1,8 @@
 footer {
-  /* padding: .75rem 0 2.5rem; */
-  /* background-color: #39434c; */
   background-color: whitesmoke;
-  color: rgba(255,255,255,.6);
 }
 
 footer a {
-  /* color: rgba(255,255,255,.6); */
   color: black;
   text-decoration: unset;
 }
@@ -33,14 +29,6 @@ footer li {
 footer li {
   list-style: none;
 }
-
-/* .title-separator {
-  display: block;
-  margin: 0 auto;
-  width: 3.75rem;
-  border: 1px solid #f08b18;
-  background-color: #f08b18;
-} */
 
 p {
   font-size: 0.875rem;

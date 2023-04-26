@@ -1,11 +1,11 @@
 <header class="fixed-top">
-  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+  <nav class="navbar navbar-expand-lg text-nowrap bg-light navbar-light">
     <div class="container nav-container px-xs-5 px-xl-15px align-items-center">
       <a class="navbar-brand navbar-custom">
         <img class="logo" src="assets/logo.png" routerLink="home" height="36">
       </a>
-      <a class="d-lg-none" href="https://www.mjam.net/en/restaurant/nxoz/garbanzo-falafel-and-hummus-bar">
-        <button class="btn btn-order">
+      <a class="d-lg-none link-order" href="https://www.mjam.net/en/restaurant/nxoz/garbanzo-falafel-and-hummus-bar">
+        <button class="btn btn-order btn-sm">
           <!-- [ngClass]="{'pulse': isPulsing}" (click)="togglePulsing()" -->
           <strong>Order online</strong>
         </button>
@@ -17,30 +17,30 @@
       </button>
       <div class="collapse navbar-collapse navbar-collapse-bottom flex-grow-0 text-center align-content-end"
         id="navbarSupportedContent" [ngbCollapse]="isCollapsed" [class.pb-3]="!isCollapsed" (click)="closeNavbar()">
-        <li class="nav-item dropdown-li mx-2">
+        <li class="nav-item dropdown-li mx-4">
           <a class="nav-link" routerLink="catering-page" routerLinkActive="active">
             <strong>Catering Services</strong>
           </a>
         </li>
-        <li class="nav-item dropdown-li location-li mx-3">
+        <li class="nav-item dropdown-li location-li mx-4">
           <a class="nav-link" routerLink="location" id="navbarDropdown" routerLinkActive="active">
             <strong>Location</strong>
           </a>
         </li>
-        <li class="nav-item dropdown-li mx-2">
+        <li class="nav-item dropdown-li mx-3">
           <a class="nav-link" routerLink="/about" routerLinkActive="active">
             <strong>About Us</strong>
           </a>
         </li>
-        <li class="nav-item dropdown-li mx-3 jobs-nav">
+        <li class="nav-item dropdown-li mx-4 jobs-nav">
           <a class="nav-link" routerLink="/jobs" routerLinkActive="active">
             <strong>Jobs</strong>
           </a>
         </li>
-        <ul class="navbar-nav d-none d-lg-block mx-2">
+        <ul class="navbar-nav d-none d-lg-block mx-3">
           <li class="nav-item">
-            <a class="nav-link order p-0" href="https://www.mjam.net/en/restaurant/nxoz/garbanzo-falafel-and-hummus-bar">
-              <button class="btn btn-order">
+            <a class="nav-link order p-0 link-order" href="https://www.mjam.net/en/restaurant/nxoz/garbanzo-falafel-and-hummus-bar">
+              <button class="btn btn-order btn-sm">
                 <!-- [ngClass]="{'pulse': isPulsing}" (click)="togglePulsing()" -->
                 <strong>Order online</strong>
               </button>
@@ -56,7 +56,7 @@
         <div class="row">
           <div class="col col-12 text-center">
             <div class="signup-bar-message d-flex justify-content-center align-items-center">
-              <div class="text-uppercase text-dark d-none d-md-block">
+              <div class="text-uppercase text-dark d-none d-md-block text-signup text-nowrap">
                 Stay updated with upcoming news and events
               </div>
               <form>
