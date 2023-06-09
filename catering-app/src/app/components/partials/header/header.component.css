@@ -20,29 +20,61 @@
 }
 
 .btn-order {
-  /* background-color: #bdd333; */
-  border: 1px solid grey;
-  /* font-size: small; */
-  /* font-weight: 300; */
-  /* font-size: 18px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-family: 'SharpGroteskBold11'; */
+  /* border: 1px solid lightgray; */
   font-size: 25px;
-  /* background-color: #bdd333; */
-}
-
-@media (max-width: 425px) {
-  .btn-order {
-    font-size: 16px;
-  }
+  color: #bdd333;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+  border: 2px solid #bdd333;
 }
 
 .btn-order:hover {
-  /* background-color: #bdd333; */
-  color: #E4A11B;
-  background-color: white;
+  color: orange;
+  background-color: #bdd333;
+  /* border: none; */
+  background-color: black;
+  border:2px solid orange;
+  transition: all 0.2s ease-in-out;
 }
+
+@media (max-width: 1200px) {
+  .btn-order {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn-order {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-order {
+    font-size: 17px;
+  }
+
+  .nav-link {
+    font-size: 17px;
+  }
+}
+
+/* @media (max-width: 425px) {
+  .btn-order {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+} */
 
 /* .link-order {
   color: black;
@@ -64,13 +96,8 @@
 } */
 
 a:hover {
-  color: #E4A11B;
-}
-
-.text-signup {
-  font-weight: 600;
-  letter-spacing: 0.025em;
-  /* font-family: 'SharpGroteskBold11'; */
+  color: orange;
+  transition: all 0.2s ease-in-out;
 }
 
 /* .btn-order:hover {
@@ -131,6 +158,9 @@ a:hover {
 .nav-link {
   border-bottom: 2px solid transparent;
   padding-bottom: 1px;
+  /* transform: scaleY(1.5); */
+  /* font-weight: 900; */
+  /* font-size: 30px; */
 }
 
 .nav-link.active {
@@ -160,6 +190,12 @@ a:hover {
 .btn-signup {
   border-color: transparent;
   border-radius: 0;
+  color: #bdd333;
+}
+
+.btn-signup:hover {
+  color: orange;
+  transition: all 0.2s ease-in-out;
 }
 
 .form-control {
@@ -182,3 +218,8 @@ a {
 .fa-lg {
   line-height: 1em;
 }
+
+.signup-bar-header {
+  background-color: #bdd333;
+}
+

@@ -1,7 +1,12 @@
 .btn-home {
-  border: 1px solid lightgrey;
+  border: 1px solid grey;
   font-size: small;
   font-weight: 400;
+}
+
+.btn-home:hover {
+  color: orange;
+  border:1px solid orange;
 }
 
 .title-separator {

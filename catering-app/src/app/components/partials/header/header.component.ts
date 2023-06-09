@@ -7,11 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   isCollapsed = true;
-  // isPulsing = true;
-
-  // togglePulsing() {
-  //   this.isPulsing = !this.isPulsing;
-  // }
 
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
